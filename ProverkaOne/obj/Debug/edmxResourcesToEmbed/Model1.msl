@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ПрактикаOneModelContainer" CdmEntityContainer="ПрактикаOneEntities">
+    <EntitySetMapping Name="Cпецификация_ингредиенты">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Cпецификация_ингредиенты">
+        <MappingFragment StoreEntitySet="Cпецификация ингредиенты">
+          <ScalarProperty Name="Изделие" ColumnName="Изделие" />
+          <ScalarProperty Name="Ингредиенты" ColumnName="Ингредиенты" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заказ">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Заказ">
+        <MappingFragment StoreEntitySet="Заказ">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Наименование_заказа" ColumnName="Наименование заказа" />
+          <ScalarProperty Name="Изделие" ColumnName="Изделие" />
+          <ScalarProperty Name="Зааказчик" ColumnName="Зааказчик" />
+          <ScalarProperty Name="Ответственный_менеджер" ColumnName="Ответственный менеджер" />
+          <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+          <ScalarProperty Name="Плановая_дата_завершения" ColumnName="Плановая дата завершения" />
+          <ScalarProperty Name="Примеры_работ" ColumnName="Примеры работ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Изделие">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Изделие">
+        <MappingFragment StoreEntitySet="Изделие">
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Размеры" ColumnName="Размеры" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ингредиент">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Ингредиент">
+        <MappingFragment StoreEntitySet="Ингредиент">
+          <ScalarProperty Name="Артикул" ColumnName="Артикул" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Единица_размера" ColumnName="Единица размера" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="Основной_поставщик" ColumnName="Основной поставщик" />
+          <ScalarProperty Name="Изображение" ColumnName="Изображение" />
+          <ScalarProperty Name="Тип_ингредиента" ColumnName="Тип ингредиента" />
+          <ScalarProperty Name="Закупочная_цена" ColumnName="Закупочная цена" />
+          <ScalarProperty Name="ГОСТ" ColumnName="ГОСТ" />
+          <ScalarProperty Name="Фасовка" ColumnName="Фасовка" />
+          <ScalarProperty Name="Характеристика" ColumnName="Характеристика" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Оборудование">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Оборудование">
+        <MappingFragment StoreEntitySet="Оборудование">
+          <ScalarProperty Name="Маркировка" ColumnName="Маркировка" />
+          <ScalarProperty Name="Тип_оборудования" ColumnName="Тип оборудования" />
+          <ScalarProperty Name="Характеристика" ColumnName="Характеристика" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователи">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Пользователи">
+        <MappingFragment StoreEntitySet="Пользователи">
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Роль" ColumnName="Роль" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Фото" ColumnName="Фото" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Поставщик">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Поставщик">
+        <MappingFragment StoreEntitySet="Поставщик">
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Адресс" ColumnName="Адресс" />
+          <ScalarProperty Name="СрокДоставки" ColumnName="СрокДоставки" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Спецификация_операции">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Спецификация_операции">
+        <MappingFragment StoreEntitySet="Спецификация операции">
+          <ScalarProperty Name="Изделие" ColumnName="Изделие" />
+          <ScalarProperty Name="Операция" ColumnName="Операция" />
+          <ScalarProperty Name="Порядковый_номер" ColumnName="Порядковый номер" />
+          <ScalarProperty Name="Тип_оборудования" ColumnName="Тип оборудования" />
+          <ScalarProperty Name="Время_на_операцию" ColumnName="Время на операцию" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Спецификация_полуфабрикаты">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Спецификация_полуфабрикаты">
+        <MappingFragment StoreEntitySet="Спецификация полуфабрикаты">
+          <ScalarProperty Name="Изделие" ColumnName="Изделие" />
+          <ScalarProperty Name="Полуфабрикаты" ColumnName="Полуфабрикаты" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Спецификая_украшения_для_торта">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Спецификая_украшения_для_торта">
+        <MappingFragment StoreEntitySet="Спецификая украшения для торта">
+          <ScalarProperty Name="Изделие" ColumnName="Изделие" />
+          <ScalarProperty Name="Украшения_для_торта" ColumnName="Украшения для торта" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тип_оборудования">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Тип_оборудования">
+        <MappingFragment StoreEntitySet="Тип оборудования">
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Украшение_для_торта">
+      <EntityTypeMapping TypeName="ПрактикаOneModel.Украшение_для_торта">
+        <MappingFragment StoreEntitySet="Украшение для торта">
+          <ScalarProperty Name="Артикул" ColumnName="Артикул" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="ЕдиницаИзмерения" ColumnName="ЕдиницаИзмерения" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="Основной_поставщик" ColumnName="Основной поставщик" />
+          <ScalarProperty Name="Изображение" ColumnName="Изображение" />
+          <ScalarProperty Name="Тип_украшения_для_торта" ColumnName="Тип украшения для торта" />
+          <ScalarProperty Name="Закупочная_цена" ColumnName="Закупочная цена" />
+          <ScalarProperty Name="Вес" ColumnName="Вес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище ПрактикаOneModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище ПрактикаOneModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище ПрактикаOneModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище ПрактикаOneModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ПрактикаOneModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище ПрактикаOneModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ПрактикаOneModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище ПрактикаOneModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище ПрактикаOneModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
